@@ -1,0 +1,81 @@
+/* 베이스 */
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "SpoqaHanSansNeo-Regular";
+  font-size: 16px;
+}
+.src-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* 레이아웃 */
+.app {
+  width: 520px;
+  margin: 0 auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.tit {
+  position: relative;
+  text-align: center;
+  padding: 20px 0 20px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.main {
+  padding: 25px 24px;
+}
+
+/* 모듈 */
+.tit .tit__name {
+  font-weight: 500;
+}
+.tit .tit__name::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 22.16px;
+  background: url(./img/close.png);
+  background-size: 20px;
+}
+.main .main__exam {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.login .login__form .login__id,
+.login .login__form .login__pws {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #767676;
+  font-weight: 400;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.login .login__form .login__check {
+  display: block;
+  border: none;
+  font-weight: 500;
+  line-height: 20.03px;
+  color: #767676;
+  background-size: whi;
+}
+
+/* 스테이트 */
