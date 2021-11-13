@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지 구현</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="tit">
+        <h1 class="tit__name">로그인 또는 회원가입</h1>
+      </header>
+      <main class="main">
+        <p class="main__exam">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+        <section class="login">
+          <h2 class="src-only">로그인</h2>
+          <form action="#" method="post" class="login__form">
+            <input type="text" placeholder="아이디" class="login__id" />
+            <input type="password" placeholder="비밀번호" class="login__pws" />
+            <p class="login__check">로그인 상태 유지</p>
+            <button type="submit" class="login__btn">로그인</button>
+          </form>
+          <ui class="login__other">
+            <li class="login__other__create">
+              <a href="#">회원가입</a>
+            </li>
+            <li class="login__other__find">
+              <a href="#">아이디/비밀번호 찾기</a>
+            </li>
+          </ui>
+        </section>
+        <section class="login-another">
+          <h2 class="src-only">다른 로그인 방법</h2>
+          <p class="login-another__contour">또는</p>
+          <a href="#" class="login-another__btn login-another__btn_google">
+            <span>구글계정으로 로그인</span>
+          </a>
+          <a href="#" class="login-another__btn login-another__btn_facebook">
+            <span>페이스북 계정으로 로그인</span>
+          </a>
+          <a href="#" class="login-another__btn login-another__btn_naver">
+            <span>네이버 계정으로 로그인</span>
+          </a>
+          <a href="#" class="login-another__btn login-another__btn_kakao">
+            <span>카카오톡 계정으로 로그인</span>
+          </a>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

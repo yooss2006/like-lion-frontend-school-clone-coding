@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1만시간의 법칙</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #5b2386;
+        position: relative;
+        font-family: "GmarketSansMedium";
+      }
+      header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+      }
+      header .roding-img {
+        width: 225px;
+        height: 225px;
+        position: absolute;
+        top: 219px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      header .title-img {
+        position: absolute;
+        width: 564px;
+        height: 112px;
+        top: 273px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      main .test-text {
+        position: absolute;
+        top: 510px;
+        width: 100%;
+        text-align: center;
+      }
+
+      main .test-text > p {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: #f5df4d;
+        margin-bottom: 78px;
+        font-family: "OTEnjoystoriesBA";
+      }
+      .test-text article p {
+        color: #ffffff;
+        font-weight: 400;
+        margin: 10px;
+        font-size: 18px;
+      }
+      .test-text article p b {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .test-text img {
+        position: absolute;
+        height: 34px;
+        width: 401px;
+        top: 91px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .playing-input {
+        position: absolute;
+        top: 815px;
+        width: 100%;
+        text-align: center;
+      }
+      .playing-input p {
+        font-size: 24px;
+        color: white;
+        font-weight: 400;
+      }
+      .playing-input p:nth-child(1) {
+        margin-bottom: 27px;
+      }
+      .playing-input p input {
+        border-radius: 7px;
+        background-color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        color: #babcbe;
+        width: 228px;
+        text-align: center;
+        height: 57px;
+        margin: 0 5px 0;
+      }
+      .what-day {
+        position: absolute;
+        top: 1071px;
+        width: 100%;
+        text-align: center;
+      }
+      .what-day button {
+        border-radius: 56px;
+        padding: 21px 49px;
+        background-color: #fcee21;
+        font-weight: 700;
+        font-size: 30px;
+        color: #5b2386;
+      }
+      .what-day img {
+        width: 33.85px;
+        height: 41.7px;
+        transform: scale(2);
+        position: absolute;
+        top: 42px;
+        padding: 0 30px;
+      }
+      .training {
+        position: absolute;
+        top: 1284px;
+        width: 100%;
+        text-align: center;
+      }
+      .training p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      .training p b {
+        font-size: 72px;
+        font-weight: 700;
+        margin-top: 17px;
+        vertical-align: middle;
+        color: #ffffff;
+        margin: 0 10px 0;
+      }
+
+      .training-link {
+        position: absolute;
+        top: 1572px;
+        width: 100%;
+        text-align: center;
+      }
+      .training-link a {
+        text-align: center;
+        padding: 21px 49px;
+        color: #5b2386;
+        border-radius: 56px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+        background-color: #fcee21;
+        margin: 0 6px;
+      }
+      .training-link a:nth-child(2) {
+        background-color: #ffffff;
+      }
+
+      footer {
+        position: absolute;
+        top: 1774.36px;
+        width: 100%;
+        text-align: center;
+      }
+      footer img {
+        width: 125px;
+        height: 25px;
+        margin-bottom: 25px;
+      }
+      footer p {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 12px;
+        margin: 5px;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      footer p:last-child {
+        margin-bottom: 116px;
+      }
+
+      @media screen and (max-width: 420px) {
+        header .roding-img {
+          width: 106px;
+          height: 106px;
+          top: 101px;
+        }
+        header .title-img {
+          width: 250px;
+          height: 53px;
+          top: 127px;
+        }
+        main .test-text {
+          top: 249px;
+        }
+
+        main .test-text > p {
+          font-size: 21px;
+          margin-bottom: 62px;
+        }
+        .test-text article p {
+          font-size: 14px;
+        }
+        .test-text article p b {
+          font-size: 16px;
+        }
+        .test-text img {
+          height: 20px;
+          width: 300px;
+          top: 110px;
+        }
+
+        .playing-input {
+          top: 469px;
+        }
+        .playing-input p {
+          font-size: 14px;
+        }
+        .playing-input p:nth-child(1) {
+          margin-bottom: 0;
+        }
+        .playing-input p input {
+          font-size: 14px;
+          width: 156px;
+          height: 37px;
+          margin: 0 3px 0;
+        }
+        .playing-input p span {
+          display: block;
+          margin: 17px 0;
+        }
+        .what-day {
+          top: 642px;
+        }
+        .what-day button {
+          width: 150px;
+          box-sizing: content-box;
+          padding: 19px 40.5px;
+          border-radius: 13px;
+          font-size: 14px;
+        }
+        .what-day img {
+          width: 22px;
+          height: 22px;
+          top: 46px;
+          padding: 0 20px;
+        }
+        .training {
+          top: 774px;
+        }
+        .training p {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .training p b {
+          font-size: 24px;
+          margin: 0 5px 0;
+        }
+
+        .training-link {
+          top: 892px;
+        }
+        .training-link a {
+          padding: 13.5px 17.5px;
+          border-radius: 56px;
+          font-size: 14px;
+          margin: 0 6px;
+        }
+
+        footer {
+          top: 1015px;
+        }
+        footer img {
+          width: 91px;
+          height: 18px;
+          margin-bottom: 17px;
+        }
+        footer p {
+          font-size: 9px;
+          margin: 5px;
+        }
+        footer p:last-child {
+          margin-bottom: 100px;
+        }
+      }
+      @font-face {
+        font-family: "GmarketSansMedium";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "OTEnjoystoriesBA";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+      .notosanskr * {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="loading.png"
+        alt="로딩이미지"
+        class="roding-img"
+        width="265px"
+        height="265px"
+      />
+      <img
+        src="title.png"
+        alt="타이틀이미지"
+        class="title-img"
+        width="564px"
+        height="112px"
+      />
+    </header>
+    <main>
+      <section class="test-text">
+        <p>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+        <article>
+          <p><b>1만 시간의 법칙</b>은</p>
+          <p>어떤 분야의 전문가가 되기 위해서는</p>
+          <p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+
+          <img src="quotes.png" alt="쉼표" />
+        </article>
+      </section>
+      <section class="playing-input">
+        <p>
+          나는 <input type="text" placeholder="예)프로그래밍" /> 전문가가 될
+          것이다.
+        </p>
+        <p>
+          <span>그래서 앞으로 매일 하루에</span>
+          <input placeholder="예)5시간" /> 시간씩 훈련할 것이다.
+        </p>
+      </section>
+      <section class="what-day">
+        <button>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        <img src="click.png" alt="" />
+      </section>
+      <section class="training">
+        <p>당신은 <b>프로그래밍</b> 전문가가 되기 위해서</p>
+        <p>대략 <b>5110</b> 일 이상 훈련하셔야 합니다! :)</p>
+      </section>
+      <section class="training-link">
+        <a href="#">훈련하러가기 GO!GO!</a>
+        <a href="#">공유하기</a>
+      </section>
+    </main>
+    <footer>
+      <img src="logo.png" alt="" />
+      <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
+      <p>수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+    </footer>
+  </body>
+</html>

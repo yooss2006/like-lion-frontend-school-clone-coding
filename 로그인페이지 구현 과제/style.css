@@ -1,0 +1,194 @@
+/* 베이스 */
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "SpoqaHanSansNeo-Regular";
+  font-size: 16px;
+}
+a {
+  text-decoration-line: none;
+  text-decoration: none;
+  color: inherit;
+}
+.src-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* 레이아웃 */
+.app {
+  width: 520px;
+  margin: 0 auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  text-align: center;
+}
+.tit {
+  position: relative;
+  padding: 20px 0 20px;
+
+  border-bottom: 1px solid #c4c4c4;
+}
+.main {
+  padding: 25px 24px;
+}
+
+.login__other {
+  display: block;
+  margin-bottom: 30px;
+}
+li {
+  list-style: none;
+}
+
+/* 모듈 */
+.tit .tit__name {
+  font-weight: 500;
+}
+.tit .tit__name::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 22.16px;
+  background: url(./img/close.png);
+  background-size: 20px;
+}
+.main .main__exam {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.login .login__form .login__id,
+.login .login__form .login__pws {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #767676;
+  font-weight: 400;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.login .login__form .login__check {
+  text-align: left;
+  display: block;
+  border: none;
+  font-weight: 500;
+  line-height: 20.03px;
+  color: #767676;
+  margin: 7px 0 21px;
+}
+.login .login__form .login__check::before {
+  content: "";
+  background: url(./img/check-box.png);
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 8px 0 4px;
+  vertical-align: middle;
+}
+.login .login__form .login__btn {
+  width: 472px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #2f80ed;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.login__other .login__other__create,
+.login__other .login__other__find {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #767676;
+}
+.login__other .login__other__create::after {
+  content: "|";
+  margin: 0 12px;
+}
+.login-another .login-another__contour {
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+  margin-bottom: 10px;
+}
+.login-another .login-another__contour::before,
+.login-another .login-another__contour::after {
+  content: "";
+  display: inline-block;
+  width: 210px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #c4c4c4;
+}
+.login-another .login-another__contour::before {
+  margin-right: 13px;
+}
+.login-another .login-another__contour::after {
+  margin-left: 13px;
+}
+.login-another .login-another__btn {
+  display: block;
+  position: relative;
+  padding: 16px 0;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #767676;
+  margin-top: 10px;
+}
+.login-another .login-another__btn_google {
+  border-color: #767676;
+}
+.login-another .login-another__btn_facebook {
+  border-color: #2d9cdb;
+}
+.login-another .login-another__btn_naver {
+  border-color: #00bf18;
+}
+.login-another .login-another__btn_kakao {
+  border-color: #f2c94c;
+  margin-bottom: 1px;
+}
+.login-another .login-another__btn span::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  top: 11px;
+  left: 12px;
+}
+.login-another .login-another__btn_google span::before {
+  background: url(./img/Google__G__Logo\ 1.png);
+}
+.login-another .login-another__btn_facebook span::before {
+  background: url(./img/facebook.png);
+}
+.login-another .login-another__btn_naver span::before {
+  background: url(./img/naver-logo.png);
+}
+.login-another .login-another__btn_kakao span::before {
+  background: url(./img/message-circle.png);
+}
+
+/* 스테이트 */
