@@ -116,7 +116,6 @@ li {
 
 .login__other .login__other__create,
 .login__other .login__other__find {
-  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   color: #767676;
